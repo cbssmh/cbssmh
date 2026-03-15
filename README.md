@@ -1,81 +1,71 @@
 # Hi, I'm Minhyeok Seo 👋
 
-Computer Science student interested in backend systems, automation infrastructure, and cloud deployment.
+Computer Science student interested in **backend systems, automation infrastructure, and data pipelines**.
 
-I enjoy building practical tools that run continuously on servers and automate real-world tasks.
+I enjoy building systems that **collect real-world data, process it with automated pipelines, and run continuously on servers.**
 
 ---
 
 ## 🔧 Tech Stack
 
 ### Languages
-- Python
-- JavaScript
 
-### Backend / Data
-- REST APIs
-- Web Crawling
-- Data Processing
+Python • JavaScript
+
+### Backend
+
+FastAPI • Node.js • REST APIs
+
+### Data
+
+SQLAlchemy • SQLite • Web Crawling • Data Processing
 
 ### Infrastructure
-- Linux
-- Oracle Cloud VM
-- systemd services
-- Scheduler-based automation
 
-### Tools
-- Git
-- SQLite
-- Discord Webhooks
+Docker • Linux • Nginx • Cloud VM • systemd
 
 ---
 
 ## 🚀 Highlighted Projects
 
+### AI Job Scout Agent
+
+AI-assisted job intelligence pipeline that crawls real job postings, extracts hiring signals using LLM-based analysis, and ranks personalized job recommendations.
+
+Tech: **FastAPI • SQLAlchemy • OpenAI API • Streamlit • Docker**
+
+---
+
+### Mini ERP System
+
+Containerized ERP backend modeling a simplified **SAP MM procurement workflow** using a microservice architecture.
+
+Tech: **FastAPI • Node.js • PostgreSQL • Docker • Nginx**
+
+---
+
 ### WorldJob Notice Notifier
 
-Cloud-deployed automation system that monitors government job announcements and sends notifications through Discord.
+Automation system that monitors government job announcements and sends alerts through Discord.
 
-**Key Features**
-- Web crawling using BeautifulSoup
-- Scheduled jobs with APScheduler
-- SQLite state tracking
-- Oracle Cloud VM deployment
-- systemd service for 24/7 operation
+Tech: **Python • APScheduler • Web Crawling • Cloud VM**
 
 ---
 
 ### Multi Hotdeal Notifier
 
-A multi-site monitoring system that tracks new deal posts from several communities and sends alerts.
+Multi-source crawler that tracks new deal posts from several communities and sends notifications.
 
-**Key Features**
-- Multi-source crawling architecture
-- Duplicate detection using SQLite
-- Scheduled monitoring
-- Discord notification system
-
----
-
-### Mini ERP Backend
-
-Backend system implementing basic enterprise resource planning logic such as inventory and transaction management.
-
----
-
-### R TA Auto Grader
-
-Automated grading tool for programming assignments designed to evaluate code submissions using predefined test cases.
+Tech: **Python • SQLite • Scheduler • Web Crawling**
 
 ---
 
 ## 📚 Interests
 
-- Backend Systems
-- Automation Infrastructure
-- Data Pipelines
-- Distributed Systems
-- Large-scale computing environments
+* Backend architecture
+* Data pipelines
+* Distributed processing systems
+* Automation infrastructure
 
 ---
 
