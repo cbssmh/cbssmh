@@ -1,91 +1,98 @@
 # Hi, I'm Minhyeok Seo 👋
 
-Computer Science student interested in **backend systems, transaction processing, and data-driven applications**.
+Backend-oriented software engineer interested in
+transaction processing, operational workflows,
+automation systems, and data-driven backend architecture.
 
-I enjoy building systems that **collect real-world data, process it through automated pipelines, and provide reliable backend services with clear business logic and data flow.**
+I build systems that collect external data, process it through structured backend workflows, and expose reliable operational logic through APIs, schedulers, and service layers.
 
 ---
 
-## 🔧 Tech Stack
-
-### Languages
-Python • Java • JavaScript
+## Tech Stack
 
 ### Backend
 FastAPI • Spring Boot • Node.js • REST APIs
 
-### Data
-SQLAlchemy • JPA • MySQL • PostgreSQL • SQLite  
-Web Crawling • Data Processing
+### Data & Persistence
+PostgreSQL • MySQL • SQLite • SQLAlchemy • JPA • Redis
 
 ### Infrastructure
-Docker • Linux • Nginx • Cloud VM • systemd
+Docker • Linux • Nginx • Cloud VM • systemd • GitHub Actions
+
+### Automation & Processing
+Web Crawling • APScheduler • Notification Pipelines • Data Processing
 
 ---
 
-## 🚀 Highlighted Projects
+## Highlighted Projects
 
-### AI Job Scout Agent
-AI-assisted job intelligence pipeline that crawls real job postings, extracts hiring signals using LLM-based analysis, and ranks personalized job recommendations.
+### AI Job Scout
+AI-assisted backend recommendation system for job analysis and personalized ranking.
 
-- Pipeline: crawling → storage → AI analysis → scoring → recommendation  
-- Focus: **data-driven recommendation logic & backend pipeline design**
+- LLM-assisted hiring-signal extraction
+- Explainable scoring pipeline
+- Modular FastAPI architecture
 
-Tech: **FastAPI • SQLAlchemy • OpenAI API • Streamlit • Docker**
-
----
-
-### Mini Core Banking System
-Backend project simulating **core banking operations** such as account management, deposits, withdrawals, and transfers.
-
-- Designed with **transactional consistency and validation logic**
-- Implemented transfer workflows with **edge case handling (insufficient balance, invalid requests)**
-- Managed transaction history to ensure consistent state changes
-
-Tech: **Java • Spring Boot • Spring Data JPA • MySQL • Gradle**
+**Tech:** FastAPI • SQLAlchemy • OpenAI API • Docker
 
 ---
 
-### Mini ERP System
-Containerized ERP backend modeling a simplified **SAP MM procurement workflow** using a microservice architecture.
+### Mini ERP MM
+Enterprise workflow backend modeling PR → PO → GR procurement lifecycle.
 
-- Modeled procurement lifecycle: request → approval → order → inventory  
-- Focus: **service separation & backend workflow design**
+- Inventory workflow orchestration
+- JWT/Redis authentication
+- Dockerized multi-service architecture
 
-Tech: **FastAPI • Node.js • PostgreSQL • Docker • Nginx**
-
----
-
-### WorldJob Notice Notifier
-Automation system that monitors government job announcements and sends alerts via Discord.
-
-- Built a **24/7 running system on Cloud VM**
-- Implemented scheduling, deduplication, and monitoring
-
-Tech: **Python • APScheduler • Web Crawling • Cloud VM • SQLite**
+**Tech:** FastAPI • Node.js • PostgreSQL • Redis • Docker • Nginx
 
 ---
 
-### Multi Hotdeal Notifier
-Multi-source crawler that tracks new deal posts from multiple communities.
+### Mini Core Banking
+Financial-transfer backend prototype exploring transaction boundaries, pessimistic locking, and validation workflows.
 
-- Handles multiple sources with **custom parsing logic**
-- Stores and filters data to avoid duplicates
+- Transfer lifecycle modeling
+- Transaction consistency exploration
+- Business-rule validation
 
-Tech: **Python • SQLite • Scheduler • Web Crawling**
+**Tech:** Spring Boot • JPA • MySQL
 
 ---
 
-## 📚 Interests
+### Mudangyi Shuttle Decision System
+Operational decision-support backend integrating schedule logic, congestion context, weather signals, and push notifications.
+
+- Rule-based operational workflows
+- Notification orchestration
+- Mobile/backend separation
+
+**Tech:** Node.js • Express • Firebase • MySQL
+
+---
+
+### Automation Services
+Lightweight backend automation systems for monitoring external sources and delivering notifications.
+
+- Discord webhook notifications
+- Scheduled crawling
+- Duplicate-prevention workflows
+- Runtime state tracking
+
+**Projects:** Hotdeal Monitor • WorldJob Notifier
+
+---
+
+## Interests
 
 - Backend architecture
-- Transaction processing systems
-- Data pipelines
-- Distributed systems
+- Workflow and state-machine design
+- Transaction processing
 - Automation infrastructure
+- Operational reliability
+- Distributed systems
 
 ---
 
-## 🌍 Location
+## Location
 
 Seoul, South Korea
