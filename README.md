@@ -1,139 +1,144 @@
 <h1 align="center">Hi, I'm Minhyeok Seo 👋</h1>
 
 <p align="center">
-Backend & systems-focused developer interested in reliable APIs, workflow automation, transaction-oriented design, and data-driven backend services.
+Systems & infrastructure-oriented developer building containerized services,
+operational automation, and reliable backend workflows.
 </p>
 
 <p align="center">
-Python · Java · JavaScript · FastAPI · Spring Boot · Node.js · Docker · SQL
+Python · FastAPI · Docker · Docker Compose · Nginx · PostgreSQL · Redis
 </p>
 
 ---
 
 ## About Me
 
-I build backend systems that collect real-world data, process it through structured workflows, and expose reliable services through APIs, automation jobs, or notification pipelines.
+I am a Computer Science student transitioning from backend systems development
+toward infrastructure and cloud engineering.
 
-My projects focus on:
+I am interested in how systems run beyond application code:
 
-- Backend architecture and API design
-- Workflow-oriented business systems
-- Transaction and consistency concerns
-- Data collection, crawling, and automation
-- Notification and monitoring pipelines
-- Dockerized service deployment
+- Containerized multi-service environments
+- Scheduled workers and operational automation
+- Persistent state and duplicate prevention
+- Failure-aware external integrations
+- Service boundaries and reverse-proxy routing
+- Operational endpoints and system visibility
+- Repeatable internal tooling and ML training workflows
 
-I am especially interested in backend systems where correctness, state management, and operational reliability matter more than simple CRUD behavior.
-
----
-
-## Featured Projects
-
-### [AI Job Scout](https://github.com/cbssmh/ai-job-scout)
-
-AI-assisted backend recommendation platform that crawls job postings, extracts hiring signals, and generates explainable job recommendations.
-
-**Focus:** FastAPI architecture, AI-assisted analysis, scoring pipeline, repository/service/scoring separation, Dockerized backend
-
-**Tech:** Python · FastAPI · SQLAlchemy · OpenAI API · Docker · Next.js
+My current focus is strengthening Linux troubleshooting, networking,
+public cloud, Infrastructure as Code, Kubernetes, and observability.
 
 ---
+
+## Selected Projects
 
 ### [Mini ERP MM](https://github.com/cbssmh/mini-erp-mm)
 
-Enterprise workflow backend prototype modeling ERP-style material-management processes such as purchase request, purchase order, goods receipt, and inventory updates.
+Containerized enterprise-workflow prototype composed of six services behind
+a single Nginx entry point.
 
-**Focus:** PR-to-PO-to-GR lifecycle, service separation, JWT auth, Redis sessions, PostgreSQL persistence, Dockerized service architecture
+**Infrastructure focus**
 
-**Tech:** Node.js · FastAPI · PostgreSQL · Redis · JWT · Docker · Nginx
+- Docker Compose environment with Nginx, FastAPI, Express, PostgreSQL, Redis, and a static frontend
+- Isolated service network and persistent PostgreSQL volume
+- Path-based reverse-proxy routing
+- Environment-based service configuration
+- PR-to-PO-to-GR workflow and inventory-state management
 
----
-
-### [Mini Core Banking](https://github.com/cbssmh/mini-core-banking)
-
-Spring Boot financial-transfer backend prototype exploring transaction boundaries, validation rules, pessimistic locking, and transfer lifecycle modeling.
-
-**Focus:** Transfer validation, transaction-boundary learning, failure-state considerations, concurrency risks, financial backend design trade-offs
-
-**Tech:** Java · Spring Boot · Spring Data JPA · MySQL · Gradle
-
----
-
-### [Mudangyi Shuttle Decision System](https://github.com/cbssmh/mudangyi-shuttle-decision-system)
-
-Backend decision-support system for campus shuttle operations, integrating schedule logic, weather signals, congestion context, and FCM notifications.
-
-**Focus:** Operational decision logic, notification workflow, external API integration, backend/mobile separation, server-side rule orchestration
-
-**Tech:** Node.js · Express · MySQL · Firebase Cloud Messaging · OpenWeather · Android WebView
-
----
-
-### [Hotdeal Monitor](https://github.com/cbssmh/hotdeal-monitor)
-
-Lightweight Python hotdeal monitoring service with Discord notifications, duplicate prevention, and server-friendly crawler operation.
-
-**Focus:** Web crawling, Discord notification workflow, JSON state tracking, failure-aware monitoring, site-level crawler configuration
-
-**Tech:** Python · BeautifulSoup · Discord Webhook · GitHub Actions
+**Tech:** FastAPI · Node.js · PostgreSQL · Redis · Docker Compose · Nginx
 
 ---
 
 ### [WorldJob Notifier](https://github.com/cbssmh/worldjob-notifier)
 
-Python automation service that monitors WorldJob notices, persists processing state, and sends Discord notifications through a scheduled backend workflow.
+Scheduled operational-automation service that polls external notice sources,
+persists checkpoints, and sends notifications without duplicate delivery.
 
-**Focus:** Scheduled automation, SQLite checkpointing, duplicate notification prevention, FastAPI operational endpoints
+**Operations focus**
 
-**Tech:** Python · FastAPI · APScheduler · SQLite · BeautifulSoup · Discord Webhook
+- APScheduler-based persistent worker
+- SQLite checkpoint and baseline initialization
+- Per-source exception containment and HTTP timeouts
+- Duplicate-notification prevention
+- Health, status, state-inspection, and manual-run endpoints
+
+**Tech:** Python · FastAPI · APScheduler · SQLite · BeautifulSoup
 
 ---
 
-## Tech Stack
+### [Team Gunchi CAD / Building Cesium](https://github.com/LeeHome2/Team_Gunchi)
 
-### Languages
+Team capstone project for DXF analysis, architectural-element classification,
+3D model generation, and Cesium visualization.
 
-Python · Java · JavaScript
+**My contribution**
 
-### Backend
+- Analyzed DXF layer, entity, and geometry characteristics
+- Developed a parameterized `train.py` workflow supporting
+  HistGradientBoosting, RandomForest, and XGBoost
+- Applied file-level train/validation/test splitting
+- Produced evaluation metrics, model artifacts, configuration, and progress state
+- Provided the training interface consumed by the team's administrator retraining flow
 
-FastAPI · Spring Boot · Node.js · Express · REST APIs
+**Tech:** Python · scikit-learn · XGBoost · Model Training Tooling
 
-### Databases & Persistence
+---
 
-PostgreSQL · MySQL · SQLite · Redis · SQLAlchemy · Spring Data JPA
+### [AI Job Scout](https://github.com/cbssmh/ai-job-scout)
 
-### Automation & Data Processing
+AI-assisted backend service that structures job postings and produces
+explainable recommendation signals.
 
-Web Crawling · APScheduler · BeautifulSoup · Discord Webhooks · Notification Pipelines
+**Systems focus**
 
-### Infrastructure
+- Route/service/repository/scoring separation
+- External request timeout and validation
+- Deterministic scoring separated from AI-assisted extraction
+- Rule-based fallback for malformed or failed LLM output
+- Dockerized API and dashboard environment
+- Unit-tested core scoring logic
 
-Docker · Docker Compose · Nginx · Linux · Cloud VM · systemd · GitHub Actions
+**Tech:** Python · FastAPI · SQLAlchemy · OpenAI API · Docker
+
+---
+
+## Technical Skills
+
+### Systems & Operations
+
+Docker · Docker Compose · Nginx · Scheduled Automation ·
+Operational APIs · State/Checkpoint Management
+
+### Backend & Automation
+
+Python · FastAPI · Node.js · Express · REST APIs · APScheduler
+
+### Data & Persistence
+
+PostgreSQL · Redis · SQLite · SQLAlchemy · Spring Data JPA
+
+### AI/ML Systems
+
+scikit-learn · XGBoost · Parameterized Training Workflows ·
+Model Evaluation · Artifact Outputs
+
+### Current Learning
+
+Linux Troubleshooting · Networking · Public Cloud · Terraform ·
+Kubernetes · Prometheus/Grafana
 
 ---
 
 ## Engineering Interests
 
-- Backend system design
-- Transaction processing and consistency
-- Workflow automation
-- Data pipelines and monitoring
-- API design and service boundaries
-- Operational reliability
-- Financial and enterprise backend systems
-
----
-
-## Current Focus
-
-I am currently improving my portfolio around:
-
-- More test coverage for business logic
-- Cleaner service boundaries
-- Transaction and concurrency correctness
-- Dockerized deployment workflows
-- Observability, logging, and operational documentation
+- Infrastructure and cloud engineering
+- Technical operations and automation
+- Containerized service environments
+- Internal tooling and platform engineering
+- Reliability and observability
+- Backend systems with operational ownership
+- MLOps and AI platform tooling
 
 ---
 
