@@ -1,147 +1,84 @@
-<h1 align="center">Hi, I'm Minhyeok Seo 👋</h1>
+# Hi, I'm Minhyeok Seo 👋
 
-<p align="center">
-Systems & infrastructure-oriented developer building containerized services,
-operational automation, and reliable backend workflows.
-</p>
+> **Backend & Platform Engineer focused on building reliable systems across backend engineering, deployment platforms, and cloud operations.**
 
-<p align="center">
-Python · FastAPI · Docker · Docker Compose · Nginx · PostgreSQL · Redis
-</p>
+I build and verify reliability across three connected layers:
 
----
+```text
+Backend Reliability
+  → Deployment Reliability
+  → Operational Reliability
+```
 
-## About Me
+## Featured Engineering Evidence
 
-I am a Computer Science student transitioning from backend systems development
-toward infrastructure and cloud engineering.
+### 1. Mini Core Banking v2.2
 
-I am interested in how systems run beyond application code:
+**Reliable transfer backend** — Java 21, Spring Boot, PostgreSQL, Flyway, Testcontainers, Docker Compose, Prometheus, Grafana
 
-- Containerized multi-service environments
-- Scheduled workers and operational automation
-- Persistent state and duplicate prevention
-- Failure-aware external integrations
-- Service boundaries and reverse-proxy routing
-- Operational endpoints and system visibility
-- Repeatable internal tooling and ML training workflows
+- Explicit transaction boundary
+- Pessimistic locking and deterministic lock ordering
+- Idempotency replay/conflict handling
+- Failed-attempt persistence, audit metadata, request IDs
+- Integration, CI, runtime health, metrics, and dashboard verification
 
-My current focus is strengthening Linux troubleshooting, networking,
-public cloud, Infrastructure as Code, Kubernetes, and observability.
+[Repository](https://github.com/cbssmh/mini-core-banking)
 
----
+### 2. Golden Path Deployment Platform
 
-## Selected Projects
+**Reproducible local GitOps foundation** — kind, Kubernetes, Argo CD, App-of-Apps, Kustomize
 
-### [Mini ERP MM](https://github.com/cbssmh/mini-erp-mm)
+- Pinned cluster, controller, source, and image inputs
+- Annotated release identity and post-tag release ledger
+- Two clean destroy/bootstrap verifications
+- Synced/Healthy reconciliation, digest match, and runtime response
 
-Containerized enterprise-workflow prototype composed of six services behind
-a single Nginx entry point.
+[Repository](https://github.com/cbssmh/golden-path-deployment-platform)
 
-**Infrastructure focus**
+### 3. AI Job Scout: Cloud Operations Edition
 
-- Docker Compose environment with Nginx, FastAPI, Express, PostgreSQL, Redis, and a static frontend
-- Isolated service network and persistent PostgreSQL volume
-- Path-based reverse-proxy routing
-- Environment-based service configuration
-- PR-to-PO-to-GR workflow and inventory-state management
+**Azure application operations without product changes** — Container Apps, ACR, GitHub OIDC, Key Vault, Managed Identity, RBAC, OpenTelemetry, Application Insights
 
-**Tech:** FastAPI · Node.js · PostgreSQL · Redis · Docker Compose · Nginx
+- Product Freeze: no feature, API, UI, AI, scoring, or database redesign
+- Commit-SHA deployment and runtime verification
+- Deployment/runtime identity separation and Key Vault-backed configuration
+- Request/exception telemetry, correlation, and cost governance
 
----
+[Repository](https://github.com/cbssmh/ai-job-scout)
 
-### [WorldJob Notifier](https://github.com/cbssmh/worldjob-notifier)
+## Supporting Evidence
 
-Scheduled operational-automation service that polls external notice sources,
-persists checkpoints, and sends notifications without duplicate delivery.
+- **[Mini ERP MM](https://github.com/cbssmh/mini-erp-mm)** — compact PR → PO → GR → inventory workflow
+- **[Mudangyi Shuttle Decision System](https://github.com/cbssmh/mudangyi-shuttle-decision-system)** — conservative rule-based backend decision support
+- **[WorldJob Notifier](https://github.com/cbssmh/worldjob-notifier)** — checkpoint-based monitoring and duplicate prevention
+- **[Hacker News Reading Decision Engine](https://github.com/cbssmh/Hacker-News-Reading-Decision-Engine)** — failure-aware reading-decision pipeline
+- **[Google Alerts AI Landscape](https://github.com/cbssmh/google-alerts-ai-landscape)** — deterministic selection and validated AI-assisted synthesis
 
-**Operations focus**
+## Team Experience
 
-- APScheduler-based persistent worker
-- SQLite checkpoint and baseline initialization
-- Per-source exception containment and HTTP timeouts
-- Duplicate-notification prevention
-- Health, status, state-inspection, and manual-run endpoints
+**Team Gunchi** — contributed DXF data/training analysis and a parameterized model-training workflow with file-level splits, evaluation, artifact output, and integration into the team retraining path. The broader API, UI, database, deployment, and Cesium system were team context rather than my sole ownership.
 
-**Tech:** Python · FastAPI · APScheduler · SQLite · BeautifulSoup
+## Capability Map
 
----
+| Capability | Evidence |
+|---|---|
+| Transactions · concurrency · idempotency | Mini Core Banking v2.2 |
+| GitOps · immutable inputs · clean rebuilds | Golden Path Deployment Platform |
+| Azure deployment · identity · secrets · telemetry | AI Job Scout: Cloud Operations Edition |
+| Workflow/state modeling | Mini ERP MM |
+| Stateful automation | WorldJob Notifier |
+| Team integration | Team Gunchi |
 
-### [Team Gunchi CAD / Building Cesium](https://github.com/LeeHome2/Team_Gunchi)
+## Background
 
-Team capstone project for DXF analysis, architectural-element classification,
-3D model generation, and Cesium visualization.
+- B.S. Candidate in Computer Science, Gachon University — Expected Feb 2027
+- KATUSA / Unit Supply Specialist (92Y), 2022–2024
+- ADsP · TOEIC 830 · TOEIC Speaking IM3/130
+- Based in Seoul, South Korea
 
-**My contribution**
+## Contact
 
-- Analyzed DXF layer, entity, and geometry characteristics
-- Developed a parameterized `train.py` workflow supporting
-  HistGradientBoosting, RandomForest, and XGBoost
-- Applied file-level train/validation/test splitting
-- Produced evaluation metrics, model artifacts, configuration, and progress state
-- Provided the training interface consumed by the team's administrator retraining flow
+- LinkedIn: https://www.linkedin.com/in/minhyeok-seo
+- Email: cbssmh@gmail.com
 
-**Tech:** Python · scikit-learn · XGBoost · Model Training Tooling
-
----
-
-### [AI Job Scout](https://github.com/cbssmh/ai-job-scout)
-
-AI-assisted backend service that structures job postings and produces
-explainable recommendation signals.
-
-**Systems focus**
-
-- Route/service/repository/scoring separation
-- External request timeout and validation
-- Deterministic scoring separated from AI-assisted extraction
-- Rule-based fallback for malformed or failed LLM output
-- Dockerized API and dashboard environment
-- Unit-tested core scoring logic
-
-**Tech:** Python · FastAPI · SQLAlchemy · OpenAI API · Docker
-
----
-
-## Technical Skills
-
-### Systems & Operations
-
-Docker · Docker Compose · Nginx · Scheduled Automation ·
-Operational APIs · State/Checkpoint Management
-
-### Backend & Automation
-
-Python · FastAPI · Node.js · Express · REST APIs · APScheduler
-
-### Data & Persistence
-
-PostgreSQL · Redis · SQLite · SQLAlchemy · Spring Data JPA
-
-### AI/ML Systems
-
-scikit-learn · XGBoost · Parameterized Training Workflows ·
-Model Evaluation · Artifact Outputs
-
-### Current Learning
-
-Linux Troubleshooting · Networking · Public Cloud · Terraform ·
-Kubernetes · Prometheus/Grafana
-
----
-
-## Engineering Interests
-
-- Infrastructure and cloud engineering
-- Technical operations and automation
-- Containerized service environments
-- Internal tooling and platform engineering
-- Reliability and observability
-- Backend systems with operational ownership
-- MLOps and AI platform tooling
-
----
-
-## Location
-
-Seoul, South Korea
+<sub>These repositories are project-based engineering evidence. They do not claim production banking, enterprise platform ownership, large-scale cloud migration, or professional years of experience.</sub>
